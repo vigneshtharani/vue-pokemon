@@ -1,5 +1,5 @@
 <template>
-<div class="pokemon-list-container">
+<div ref="section" class="pokemon-list-container">
   <div class="image-container">
     <img src="@/assets/images/logo.png">
   </div>

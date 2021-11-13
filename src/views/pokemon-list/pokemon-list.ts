@@ -48,6 +48,8 @@ export default defineComponent({
       return CommonService.getPokemonList(params);
     },
     onPageChange(page: number) {
+      console.log(this.$refs['section'], 'is it works');
+      (this.$refs['section'] as any).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
       this.currentPage = page;
       const nextSetOffset = (page - 1) * 30;
       const params = {

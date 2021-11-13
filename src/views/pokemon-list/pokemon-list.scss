@@ -26,6 +26,12 @@
         font-size: 18px;
         font-family: 'Montserrat';
         cursor: pointer;
+        transition: 1s;
+        text-transform: capitalize;
+
+        &:hover {
+          transform: scale(1.2);
+        }
 
         a {
           text-decoration: none;
