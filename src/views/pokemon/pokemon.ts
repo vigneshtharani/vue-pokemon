@@ -9,7 +9,7 @@ export default defineComponent({
   data() {
     return {
       title: 'pokemon title',
-      id: this.$route.params.id,
+      id: this.$route.params.id as any,
       isLoaded: false,
       pokemonDetail: {}
     }

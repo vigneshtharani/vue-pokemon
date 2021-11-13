@@ -80,7 +80,7 @@ export default defineComponent({
     onClickPreviousPage() {
       this.$emit('pagechanged', this.currentPage - 1);
     },
-    onClickPage(page) {
+    onClickPage(page: any) {
       this.$emit('pagechanged', page);
     },
     onClickNextPage() {
@@ -92,7 +92,7 @@ export default defineComponent({
     onClickLastPageNumber() {
       this.$emit('pagechanged', this.totalPages);
     },
-    isPageActive(page) {
+    isPageActive(page: any) {
       return this.currentPage === page;
     },
   }

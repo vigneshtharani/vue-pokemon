@@ -13,7 +13,7 @@ export default defineComponent({
   },
   data() {
     return {
-      pokemonList: [],
+      pokemonList: [] as any,
       currentPage: 1,
       totalPokemonList: 0,
       perPage: 30,
@@ -67,7 +67,7 @@ export default defineComponent({
         limit: 15,
         offset: 30
       }
-      this.getPokemonList(params).then((responses) => {
+      this.getPokemonList(params).then((responses: any) => {
         setTimeout(() => {
           this.pokemonList = [...this.pokemonList, ...responses.results];
           this.isShowMoreLoad = false;

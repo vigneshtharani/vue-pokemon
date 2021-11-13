@@ -5,7 +5,7 @@ export default defineComponent({
   components: {
   },
   props: {
-    radioValues: Array
+    radioValues: Array as any
   },
   data() {
     return {
@@ -18,7 +18,7 @@ export default defineComponent({
       this.$emit('radioChanged', this.selectedValue)
     },
     radioValues() {
-      this.selectedValue = this.radioValues[0].value
+      this.selectedValue = this.radioValues && this.radioValues.length && this.radioValues[0].value || null
     }
   }
 });
