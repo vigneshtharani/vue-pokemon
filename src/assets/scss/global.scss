@@ -1,0 +1,14 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

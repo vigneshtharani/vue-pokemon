@@ -1,0 +1,40 @@
+.pokemon-container {
+  min-height: 100vh;
+  background: #263238;
+  padding-bottom: 20px;
+
+  .image-container {
+    padding: 20px;
+  }
+
+  .detail-container {
+    color: #fff;
+    font-family: 'MONTSERRAT';
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    .row-image {
+      img {
+        width: 400px;
+      }
+    }
+
+    .row-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin: auto 50px;
+
+      .row-height,
+      .row-name,
+      .row-weight {
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: capitalize;
+        text-align: left;
+        margin: 8px 0;
+      }
+    }
+  }
+}
