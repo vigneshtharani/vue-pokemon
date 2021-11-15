@@ -1,6 +1,6 @@
 .pokemon-list-container {
   min-height: 100vh;
-  background: #263238;
+  background: $outer-space;
   padding-bottom: 20px;
 
   .image-container {
@@ -19,12 +19,12 @@
         height: 100px;
         display: inline-flex;
         justify-content: center;
-        background: #fff;
+        background: $white;
         align-items: center;
         margin: 10px;
         font-weight: bold;
         font-size: 18px;
-        font-family: 'Montserrat';
+        font-family: $montserrat;
         cursor: pointer;
         transition: 1s;
         text-transform: capitalize;
@@ -35,7 +35,7 @@
 
         a {
           text-decoration: none;
-          color: #000;
+          color: $black;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -55,7 +55,7 @@
       button {
         width: 150px;
         height: 55px;
-        font-family: 'MONTSERRAT';
+        font-family: $montserrat;
         font-size: 16px;
       }
     }

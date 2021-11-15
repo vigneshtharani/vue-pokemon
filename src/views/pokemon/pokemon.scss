@@ -1,6 +1,6 @@
 .pokemon-container {
   min-height: 100vh;
-  background: #263238;
+  background: $outer-space;
   padding-bottom: 20px;
 
   .image-container {
@@ -8,11 +8,12 @@
   }
 
   .detail-container {
-    color: #fff;
-    font-family: 'MONTSERRAT';
+    color: $white;
+    font-family: $montserrat;
     margin: auto;
     display: flex;
     justify-content: center;
+    min-height: 400px;
 
     .row-image {
       img {

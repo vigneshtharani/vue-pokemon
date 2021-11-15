@@ -6,8 +6,7 @@
   height: 45px;
   margin: 3rem;
   border-radius: 0.6rem;
-  background: #ffffff;
-  // box-shadow: 0 0.8rem 2rem rgb(90 97 129 / 5%);
+  background: $white;
   grid-auto-columns: minmax(0, 55px);
   grid-auto-flow: column;
   width: fit-content;
@@ -36,6 +35,6 @@
 }
 
 .active {
-  background-color: #263238;
-  color: #ffffff;
+  background-color: $outer-space;
+  color: $white;
 }

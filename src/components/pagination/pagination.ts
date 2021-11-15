@@ -2,9 +2,6 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'pagination',
-  components: {
-
-  },
   props: {
     maxVisibleButtons: {
       type: Number,
@@ -38,29 +35,22 @@ export default defineComponent({
       if (this.currentPage === 1) {
         return 1;
       }
-
       if (this.currentPage === this.totalPages) {
         return this.totalPages - this.maxVisibleButtons + 1;
       }
-
       return this.currentPage - 1;
-
     },
     endPage() {
-
       return Math.min(this.startPage + this.maxVisibleButtons - 1, this.totalPages);
-
     },
     pages() {
       const range = [];
-
       for (let i = this.startPage; i <= this.endPage; i += 1) {
         range.push({
           name: i,
           isDisabled: i === this.currentPage
         });
       }
-
       return range;
     },
     isInFirstPage() {
@@ -69,9 +59,6 @@ export default defineComponent({
     isInLastPage() {
       return this.currentPage === this.totalPages;
     },
-  },
-  watch: {
-
   },
   methods: {
     onClickFirstPage() {
