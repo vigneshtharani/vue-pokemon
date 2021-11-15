@@ -12,7 +12,7 @@
   </div>
   <div class="navigation-container">
     <radio-button :radioValues="radioValues" @radioChanged="onRadioChanged"></radio-button>
-    <div class="navigation-selected-container">
+    <div class="navigation-selected-container" v-if="pokemonList.length">
       <template v-if="isShowPagination">
         <pagination :total-pages="totalPages" :total="totalPokemonList" :per-page="perPage" :current-page="currentPage" @pagechanged="onPageChange" />
       </template>
